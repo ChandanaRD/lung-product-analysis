@@ -1,3 +1,66 @@
-<app-nodule-analysis></app-nodule-analysis>
-<app-high-attenuation-analysis></app-high-attenuation-analysis>
-<app-low-attenuation-analysis></app-low-attenuation-analysis>
+<div class="content-wrapper">
+    <div class="patient-details-wrapper row">
+        <div class='col'>
+            <div class="detail">
+                <span class="font-normal-light">Name</span>: <span class="font-normal-bold">00300380</span>
+            </div>
+            <div class="detail">
+                <span class="font-normal-light">Patient ID</span>: <span class="font-normal-bold">00300380</span>
+            </div>
+            <div class="detail">
+                <span class="font-normal-light">Ref. physician</span>: <span class="font-normal-bold">-</span>
+            </div>
+        </div>
+        <div class='col'>
+            <div class="detail">
+                <span class="font-normal-light">Accession no</span>: <span class="font-normal-bold">00300380</span>
+            </div>
+            <div class="detail">
+                <span class="font-normal-light">Study date</span>: <span class="font-normal-bold">01-01-2018</span>
+            </div>
+        </div>
+        <div class='col'>
+            <div class="detail">
+                <span class="font-normal-light">Sex</span>: <span class="font-normal-bold">M</span>
+            </div>
+            <div class="detail">
+                <span class="font-normal-light">Age</span>: <span class="font-normal-bold">025Y</span>
+            </div>
+        </div>
+
+    </div>
+    <ul class="nav nav-tabs" id="analysis-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="nodule-analysis-tab" data-toggle="tab" href="#nodule-analysis" role="tab" aria-controls="nodule-analysis" aria-selected="true">Nodule Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="high-attenuation-analysis-tab" data-toggle="tab" href="#high-attenuation-analysis" role="tab" aria-controls="high-attenuation-analysis" aria-selected="false">High Atteuation Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="low-attenuation-analysis-tab" data-toggle="tab" href="#low-attenuation-analysis" role="tab" aria-controls="low-attenuation-analysis" aria-selected="false">Low Attenuation Analysis</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="analysis-tabs-content">
+    <div class="tab-pane fade show active" id="nodule-analysis" role="tabpanel" aria-labelledby="nodule-analysis">
+        <app-nodule-analysis></app-nodule-analysis>
+    </div>
+    <div class="tab-pane fade" id="high-attenuation-analysis" role="tabpanel" aria-labelledby="high-attenuation-analysis">
+        <app-high-attenuation-analysis></app-high-attenuation-analysis>
+    </div>
+    <div class="tab-pane fade" id="low-attenuation-analysis" role="tabpanel" aria-labelledby="low-attenuation-analysis-tab">
+        <app-low-attenuation-analysis></app-low-attenuation-analysis>
+    </div>
+    </div>
+    <div class="content-footer">
+        <div class='flex-box btn-container'>
+            <button class="btn btn-primary">Approve Report</button>
+            <button class="btn btn-primary">Download</button>
+        </div>
+        <div class="updated-by">
+            <span>
+                This report was reviewed by a radiologist on 08/24/2020, 04:04:36
+            </span>
+        </div>
+    </div>
+    
+</div>

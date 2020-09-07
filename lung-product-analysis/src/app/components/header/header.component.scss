@@ -1,0 +1,18 @@
+@import "../../../variables.scss";
+
+.header-wrapper{
+    background-color: $dark-blue;
+    color: $logo-color;
+    border-bottom: 0.2rem solid $logo-color;
+    min-height: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .logo-container{
+        margin: 1rem;
+        .logo{
+            width: 12rem;
+            height: auto;
+        }
+    }
+}
