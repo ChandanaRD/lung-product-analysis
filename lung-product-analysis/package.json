@@ -13,7 +13,7 @@
     "format:check": "prettier --config ./.prettierrc --list-different \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss}\"",
     "precommit": "run-p format:fix lint",
     "predeploy": "npm run build-prod",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d ../docs"
   },
   "private": true,
   "dependencies": {
