@@ -1,49 +1,49 @@
-<div class="nodule-wrapper">
-    <div class="nodule-header flex-row flex-box">
-        <div class="font-normal-bold">
-            Nodule 1
+<div class="nodule-wrapper card bg-light mb-3" [hidden]='isHidden'>
+    <div class="card-header flex-row flex-box">
+        <div class=" font-normal-bold">
+            Nodule {{nodule.id}}
         </div>
         <div class="box-container">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="falsePositive" value="flase positive">
-                <label class="form-check-label" for="falsePositive">f p</label>
+            <div class="form-check form-check-inline" title="false positive">
+                <input class="form-check-input" type="checkbox" id="falsePositive" value="flase positive" (change)="hide()">
+                <label class="form-check-label" for="falsePositive"><i class="fa fa-times color-red" aria-hidden="true"></i></label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check-inline" title='most significant'>
                 <input class="form-check-input" type="checkbox" id="most-significant" value="most significant">
-                <label class="form-check-label" for="most-significant">M s</label>
+                <label class="form-check-label" for="most-significant"><i class="fa fa-circle color-blue" aria-hidden="true"></i></label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check-inline" title='add to report'>
                 <input class="form-check-input" type="checkbox" id="add-to-report" value="add to report">
-                <label class="form-check-label" for="add-to-report">A r</label>
+                <label class="form-check-label" for="add-to-report"><i class="fa fa-plus color-green" aria-hidden="true"></i></label>
               </div>
         </div>
     </div>
-    <div class="flex-box flex-row">
+    <div class="card-body flex-box flex-row">
         <div class='flex-left'>
             <div class='col'>
                 <div class="detail">
-                    <span class="font-normal-light">Lobe</span>: <span class="font-normal-bold">00300380</span>
+                    <span class="font-normal-light">Lobe</span>: <span class="font-normal-bold">{{nodule.lobe}}</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Type</span>: <span class="font-normal-bold">00300380</span>
+                    <span class="font-normal-light">Type</span>: <span class="font-normal-bold">{{nodule.type}}</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">%Classification</span>: <span class="font-normal-bold">-</span>
+                    <span class="font-normal-light">%Calcification</span>: <span class="font-normal-bold">{{nodule.calcification}}</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Size</span>: <span class="font-normal-bold">00300380</span>
+                    <span class="font-normal-light">Size</span>: <span class="font-normal-bold">{{nodule.size}}</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Volume</span>: <span class="font-normal-bold">00300380</span>
+                    <span class="font-normal-light">Volume</span>: <span class="font-normal-bold">{{nodule.volume}}</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Border</span>: <span class="font-normal-bold">-</span>
+                    <span class="font-normal-light">Border</span>: <span class="font-normal-bold">{{nodule.border? nodule.border:'-'}}</span>
                 </div>
             </div>
         </div>
         <div class="flex-right">
             <div class="detail">
-                <img class="detail-image" src='assets/images/thumbnail_4.png'>
+                <img class="detail-image" [src]='nodule.image'>
             </div>
         </div>
     </div>

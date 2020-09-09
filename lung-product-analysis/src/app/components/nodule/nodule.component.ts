@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-nodule',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoduleComponent implements OnInit {
 
+  @Input() nodule: any;
+  isHidden = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  hide(){
+    this.isHidden = true;
   }
 
 }

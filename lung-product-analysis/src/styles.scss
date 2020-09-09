@@ -4,6 +4,24 @@
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
+    color: $dark-blue;
+    background: $light-bg;
+
+    .btn:hover{
+        background-color: $logo-color;
+    }
+    .link:hover{
+        color: $logo-color;
+    }
+    
+    .btn-primary{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .card-header{
+        color: $primary-color;
+    }
 
     .flex-row{
         display: flex;
@@ -29,6 +47,48 @@
                 font-weight: 700;
             }
         }
-    
+        &-xl{
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+    }
+
+    .d-flex{
+        display: flex;
+        &-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-row{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .disabled{
+        cursor: default !important;
+        color: grey !important;
+    }
+
+    .color{
+        &-red{
+            color: $red!important;
+        }
+        &-yellow{
+            color:yellow !important;
+        }
+        &-blue{
+            color:$blue !important;
+        }
+        &-greeen{
+            color:green !important;
+        }
     }
 }

@@ -1,7 +1,25 @@
 .nodule-analysis-wrapper{
+    margin-bottom: 1rem;
+    .header{
+        margin: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+    }
+    .radio-box{
+        display:flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
     .nodule-container{
-        max-height: 35rem;
+        width: 40%;
         overflow: scroll;
-        margin: 1rem 0 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 40rem;
+    }
+    .text-editor-container{
+        margin-left:1rem;
+        max-width: 60%;
     }
 }

@@ -1,12 +1,51 @@
+@import "../../../variables.scss";
+
 .content-wrapper{
-    margin:0.4rem 10rem 0.4rem 10rem;
+    
+    width:90%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
     .patient-details-wrapper{
-        margin: 1rem 0 1rem 0;
+        padding:1rem;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        border-radius: 2px;
+        margin-bottom: 0.5rem;
+        justify-content: space-between;
+        .d-col{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
     }
-    .content-footer{
+    
+    .page-content{
+        border-radius: 2px;
+        background: $white;
+        padding:1rem;
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .page-nav-key{
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        top: 50%;
+        position: absolute;
+        font-size: 3rem;
+        color: $primary-color;
+        cursor: pointer;
+        
+    }
+    .left{
+        right:102%
+    }
+    .right{
+        left:102%
     }
 
 }

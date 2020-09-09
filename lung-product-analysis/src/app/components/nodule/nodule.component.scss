@@ -1,9 +1,7 @@
 @import "../../../variables.scss";
 
 .nodule-wrapper{
-    margin: 1rem;
-    max-width: 20rem;
-    border-radius: 0.2rem;
+    max-width: 25rem;
 
     .flex-box{
         justify-content: space-between;
@@ -16,5 +14,4 @@
     .detail-image{
         max-height: 10rem;
     }
-    border: 2px solid $grey-border;
 }

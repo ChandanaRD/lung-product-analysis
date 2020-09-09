@@ -1,13 +1,33 @@
-<div class='nodule-analysis-wrapper flex-row'>
-    <div class="flex-left nodule-container">
-        <app-nodule></app-nodule>
-        <app-nodule></app-nodule>
-        <app-nodule></app-nodule>
-        <app-nodule></app-nodule>
-        <app-nodule></app-nodule>
-        <app-nodule></app-nodule>
+<div class='nodule-analysis-wrapper d-flex-col'>
+    <div class=' header w-100'>
+        <div class='font-xl'>
+            Nodule Analysis
+        </div>
+        <div class="d-flex">
+            <div class="radio-box">
+                Fleischner Risk Category : &nbsp;
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="low-risk" name="low Risk" checked required>
+                    <label class="custom-control-label" for="low-risk">Low Risk &nbsp;</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="high-risk" name="high risk" required>
+                    <label class="custom-control-label" for="high-risk">High Risk &nbsp;</label>
+                  </div>
+            </div>
+            <div>
+                <button class="btn btn-primary" title="Tooltip on top">Download</button>
+            </div>
+        </div>
     </div>
-    <div class="flex-right">
-        data
+    <div class="d-flex ">
+        <div class="nodule-container">
+            <div *ngFor="let item of nodules">
+                <app-nodule [nodule]="item"></app-nodule>
+            </div>
+        </div>
+        <div class="text-editor-container">
+            <app-text-area></app-text-area>
+        </div>
     </div>
 </div>
