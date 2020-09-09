@@ -16,7 +16,7 @@ export class NoduleAnalysisComponent implements OnInit {
     size:6.6,
     volume:0.17,
     border:null,
-    image:'/assets/images/thumbnail_0.png'
+    image:'assets/images/thumbnail_0.png'
   },
   {
     id:2,
@@ -26,7 +26,7 @@ export class NoduleAnalysisComponent implements OnInit {
     size:5.6,
     volume:0.11,
     border:null,
-    image:'/assets/images/thumbnail_4.png'
+    image:'assets/images/thumbnail_4.png'
   },
   {
     id:3,
@@ -36,7 +36,7 @@ export class NoduleAnalysisComponent implements OnInit {
     size:5.4,
     volume:0.10,
     border:null,
-    image:'/assets/images/thumbnail_5.png'
+    image:'assets/images/thumbnail_5.png'
   }
 ]
   constructor() { }
