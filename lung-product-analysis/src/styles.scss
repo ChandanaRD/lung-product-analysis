@@ -91,4 +91,43 @@
             color:green !important;
         }
     }
+
+    .detail{
+        input[type=text]{
+            max-width: 5rem;
+        }
+        input[type=number]{
+            width: 3rem;
+        }
+    }
+    .detail-input{
+        border: none;
+        border-bottom: 1px solid $primary-color;
+    }
+
+    .tab-wrapper{
+        .nav-tabs{
+            font-size: 1.2rem;
+            background-color: white;
+        }
+        a{
+            color: $dark-blue;
+        }
+        .active{
+            border: none;
+            border-bottom: 1px solid $primary-color;
+            color: $primary-color;
+            font-weight: bold;
+        }
+        .nav-item:hover{
+            background-color: #f1f1f1;
+        }
+    }
+
+    .zero-state{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

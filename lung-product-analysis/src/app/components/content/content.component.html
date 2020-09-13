@@ -28,18 +28,53 @@
             </div>
         </div>
     </div>
-    <div class="page-content">
-        <div class='page-nav-key left' [ngClass]="{'disabled':pageIndex<=1}" (click)="prev()">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <div class="tab-wrapper">
+        <ul class="nav nav-tabs" id="analysis-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nodule-analysis-tab" data-toggle="tab" href="#nodule-analysis" role="tab" aria-controls="nodule-analysis" aria-selected="true">Nodule Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="high-attenuation-analysis-tab" data-toggle="tab" href="#high-attenuation-analysis" role="tab" aria-controls="high-attenuation-analysis" aria-selected="false">High Atteuation Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="low-attenuation-analysis-tab" data-toggle="tab" href="#low-attenuation-analysis" role="tab" aria-controls="low-attenuation-analysis" aria-selected="false">Low Attenuation Analysis</a>
+            </li>
+        </ul>
+        <!-- <div class="tab-content" id="analysis-tabs-content">
+        <div class="tab-pane fade show active" id="nodule-analysis" role="tabpanel" aria-labelledby="nodule-analysis">
+            <app-nodule-analysis></app-nodule-analysis>
         </div>
-        <div>
+        <div class="tab-pane fade" id="high-attenuation-analysis" role="tabpanel" aria-labelledby="high-attenuation-analysis">
+            <app-high-attenuation-analysis></app-high-attenuation-analysis>
+        </div>
+        <div class="tab-pane fade" id="low-attenuation-analysis" role="tabpanel" aria-labelledby="low-attenuation-analysis-tab">
+            <app-low-attenuation-analysis></app-low-attenuation-analysis>
+        </div>
+        </div> -->
+    </div>
+    <div class="page-content">
+        <!-- <div class='page-nav-key left' [ngClass]="{'disabled':pageIndex<=1}" (click)="prev()">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div> -->
+        <div class="tab-content" id="analysis-tabs-content">
+            <div class="tab-pane fade show active" id="nodule-analysis" role="tabpanel" aria-labelledby="nodule-analysis">
+                <app-nodule-analysis></app-nodule-analysis>
+            </div>
+            <div class="tab-pane fade" id="high-attenuation-analysis" role="tabpanel" aria-labelledby="high-attenuation-analysis">
+                <app-high-attenuation-analysis></app-high-attenuation-analysis>
+            </div>
+            <div class="tab-pane fade" id="low-attenuation-analysis" role="tabpanel" aria-labelledby="low-attenuation-analysis-tab">
+                <app-low-attenuation-analysis></app-low-attenuation-analysis>
+            </div>
+            </div>
+        <!-- <div>
             <app-nodule-analysis *ngIf="pageIndex===1"></app-nodule-analysis>
             <app-low-attenuation-analysis *ngIf="pageIndex===2"></app-low-attenuation-analysis>
             <app-high-attenuation-analysis *ngIf="pageIndex===3"></app-high-attenuation-analysis>
-        </div>
-        <div class="page-nav-key right" [ngClass]='{"disabled":pageIndex>=3}' (click)="next()">
+        </div> -->
+        <!-- <div class="page-nav-key right" [ngClass]='{"disabled":pageIndex>=3}' (click)="next()">
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
+        </div> -->
     </div>
     <div class="d-flex-col">
         <div class='flex-box btn-container'>

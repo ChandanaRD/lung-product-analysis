@@ -22,22 +22,32 @@
         <div class='flex-left'>
             <div class='col'>
                 <div class="detail">
-                    <span class="font-normal-light">Lobe</span>: <span class="font-normal-bold">{{nodule.lobe}}</span>
+                    <span class="font-normal-light">Lobe</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="text" [(ngModel)] = "nodule.lobe" name="" id="">
+                    </span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Type</span>: <span class="font-normal-bold">{{nodule.type}}</span>
+                    <span class="font-normal-light">Type</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="text" [(ngModel)] = "nodule.type" name="" id="">
+                    </span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">%Calcification</span>: <span class="font-normal-bold">{{nodule.calcification}} %</span>
+                    <span class="font-normal-light">%Calcification</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="number" [(ngModel)] = "nodule.calcification" name="" id=""> %</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Size</span>: <span class="font-normal-bold">{{nodule.size}} mm</span>
+                    <span class="font-normal-light">Size</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="number" [(ngModel)] = "nodule.size" name="" id=""> mm</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Volume</span>: <span class="font-normal-bold">{{nodule.volume}} ml</span>
+                    <span class="font-normal-light">Volume</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="number" [(ngModel)] = "nodule.volume" name="" id="">
+                         ml</span>
                 </div>
                 <div class="detail">
-                    <span class="font-normal-light">Border</span>: <span class="font-normal-bold">{{nodule.border? nodule.border:'-'}}</span>
+                    <span class="font-normal-light">Border</span>: <span class="font-normal-bold">
+                        <input class="detail-input" type="number" [(ngModel)] = "nodule.border" name="" id="">
+                    </span>
                 </div>
             </div>
         </div>
