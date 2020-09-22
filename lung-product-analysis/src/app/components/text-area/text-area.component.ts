@@ -18,6 +18,7 @@ export class TextAreaComponent implements OnInit {
     editable: true,
     spellcheck: false,
     minHeight: "20rem",
+    width:"100%",
     placeholder: 'Enter data here...',
     translate: 'no',
     "toolbar": [
